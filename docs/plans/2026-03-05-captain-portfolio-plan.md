@@ -44,7 +44,7 @@ Run:
 ```bash
 mkdir -p public/cv public/images
 cp CV_Volodymyr_Korablov.pdf public/cv/
-cp P1404851.JPG public/images/profile.jpg
+cp main.JPG public/images/profile.jpg
 ```
 
 **Step 4: Configure next.config.ts for static export**
