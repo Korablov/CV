@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+@theme {
+  --color-navy: #0a192f;
+  --color-navy-light: #112240;
+  --color-steel: #4a90a4;
+  --color-gold: #c9a84c;
+  --color-gold-hover: #d4b55a;
+  --color-light-text: #e6f1ff;
+  --color-dark-text: #1a1a2e;
+  --color-light-bg: #f8f9fa;
+
+  --font-heading: "Inter", "system-ui", "sans-serif";
+  --font-body: "Inter", "system-ui", "sans-serif";
+}
