@@ -8,7 +8,7 @@ import { AnimateOnScroll } from "./AnimateOnScroll";
 
 export function Gallery() {
   const [selected, setSelected] = useState<number | null>(null);
-  const photos = profile.gallery;
+  const photos = profile.gallery as readonly { src: string; alt: string }[];
 
   if (photos.length === 0) return null;
 

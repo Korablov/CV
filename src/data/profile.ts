@@ -6,7 +6,7 @@ export const profile = {
   phone: "+380507662038",
   telegram: "",
   cvPath: "/cv/CV_Volodymyr_Korablov.pdf",
-  profileImage: "/images/profile.jpg",
+  profileImage: "/images/main.JPG",
 
   about:
     "Experienced Heavy-Lift Master with continuous service on heavy-lift vessels since 2012. Over 13 years of professional experience in heavy-lift and project cargo operations, including command as Master. Extensive background in handling complex, non-standard and oversized cargoes worldwide. Safety-oriented leader with calm decision-making under pressure.",
@@ -68,5 +68,19 @@ export const profile = {
     },
   ],
 
-  gallery: [] as Array<{ src: string; alt: string }>,
+  gallery: [
+    { src: "/images/image01.png", alt: "Heavy-lift vessel night loading operations at port" },
+    { src: "/images/image02.png", alt: "Tandem crane lift of industrial reactor" },
+    { src: "/images/image03.png", alt: "Luxury yacht heavy-lift loading" },
+    { src: "/images/image04.png", alt: "Liebherr crane discharge at tropical port" },
+    { src: "/images/image05.png", alt: "Tandem lift of transformer module" },
+    { src: "/images/image06.png", alt: "Industrial vessels crane loading operation" },
+    { src: "/images/image07.png", alt: "Liebherr crane loading at Inter Marine vessel" },
+    { src: "/images/image08.png", alt: "Tugboat heavy-lift operation" },
+    { src: "/images/image09.png", alt: "Industrial reactor loading into cargo hold" },
+    { src: "/images/image10.png", alt: "Patrol boat offshore crane discharge" },
+    { src: "/images/image11.png", alt: "Crawler crane loading at Inter Marine" },
+    { src: "/images/image12.png", alt: "Heavy crane discharge at coastal port" },
+    { src: "/images/image13.png", alt: "Twin cranes aboard heavy-lift vessel" },
+  ],
 } as const;
