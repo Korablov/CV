@@ -44,7 +44,7 @@ export function Contact() {
   return (
     <section id="contact" className="relative bg-white py-20 md:py-28 px-6">
       <NauticalLines />
-      <div className="max-w-xl mx-auto text-center">
+      <div className="relative z-10 max-w-xl mx-auto text-center">
         <AnimateOnScroll>
           <h2 className="text-2xl md:text-3xl font-black text-dark-text tracking-[0.05em] mb-12">
             GET IN TOUCH
@@ -87,7 +87,7 @@ export function Contact() {
         </AnimateOnScroll>
       </div>
 
-      <div className="max-w-6xl mx-auto mt-20 pt-8 border-t border-border text-center">
+      <div className="relative z-10 max-w-6xl mx-auto mt-20 pt-8 border-t border-border text-center">
         <p className="text-dark-text/30 text-xs tracking-wider">
           © {new Date().getFullYear()} Volodymyr Korablov
         </p>

@@ -8,7 +8,7 @@ export function About() {
   return (
     <section id="about" className="relative bg-light-bg py-20 md:py-28 px-6">
       <NauticalLines />
-      <div className="max-w-6xl mx-auto">
+      <div className="relative z-10 max-w-6xl mx-auto">
         <div className="grid md:grid-cols-2 gap-12 md:gap-16">
           <AnimateOnScroll>
             <h2 className="text-2xl md:text-3xl font-black text-dark-text tracking-[0.05em] mb-6">

@@ -16,7 +16,7 @@ export function Gallery() {
   return (
     <section id="gallery" className="relative bg-light-bg py-20 md:py-28 px-6">
       <NauticalLines />
-      <div className="max-w-6xl mx-auto">
+      <div className="relative z-10 max-w-6xl mx-auto">
         <AnimateOnScroll>
           <h2 className="text-3xl font-bold text-dark-text tracking-wider mb-12 text-center">
             OPERATIONS

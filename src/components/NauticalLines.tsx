@@ -1,7 +1,7 @@
 export function NauticalLines({ className = "" }: { className?: string }) {
   return (
     <div
-      className={`absolute inset-0 overflow-hidden pointer-events-none ${className}`}
+      className={`absolute inset-0 overflow-hidden pointer-events-none z-0 ${className}`}
     >
       <svg
         className="absolute inset-0 w-full h-full"
