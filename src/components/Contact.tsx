@@ -47,7 +47,7 @@ export function Contact() {
       <div className="relative z-10 max-w-xl mx-auto text-center">
         <AnimateOnScroll>
           <h2 className="text-2xl md:text-3xl font-black text-dark-text tracking-[0.05em] mb-12">
-            GET IN TOUCH
+            CONTACT
           </h2>
         </AnimateOnScroll>
 

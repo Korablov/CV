@@ -81,6 +81,5 @@ export const profile = {
     { src: "/images/image10.png", alt: "Patrol boat offshore crane discharge" },
     { src: "/images/image11.png", alt: "Crawler crane loading at Inter Marine" },
     { src: "/images/image12.png", alt: "Heavy crane discharge at coastal port" },
-    { src: "/images/image13.png", alt: "Twin cranes aboard heavy-lift vessel" },
   ],
 } as const;
