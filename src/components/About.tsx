@@ -9,7 +9,7 @@ export function About() {
       <div className="max-w-6xl mx-auto">
         <div className="grid md:grid-cols-2 gap-12 md:gap-16">
           <AnimateOnScroll>
-            <h2 className="text-3xl font-bold text-dark-text tracking-wider mb-6">
+            <h2 className="text-2xl md:text-3xl font-black text-dark-text tracking-[0.05em] mb-6">
               ABOUT ME
             </h2>
             <p className="text-dark-text/80 leading-relaxed text-base md:text-lg">
@@ -22,9 +22,9 @@ export function About() {
               {profile.keyFacts.map((fact) => (
                 <div
                   key={fact.label}
-                  className="bg-white rounded-lg p-5 shadow-sm border border-gray-100"
+                  className="bg-white rounded-lg p-5 shadow-sm border border-border"
                 >
-                  <div className="text-3xl font-bold text-navy">{fact.value}</div>
+                  <div className="text-3xl font-black text-navy">{fact.value}</div>
                   <div className="text-dark-text font-medium text-sm mt-1">
                     {fact.label}
                   </div>
@@ -36,14 +36,14 @@ export function About() {
         </div>
 
         <AnimateOnScroll className="mt-16">
-          <h3 className="text-sm font-semibold text-dark-text/50 tracking-[0.2em] uppercase mb-6 text-center">
+          <h3 className="text-sm font-bold text-dark-text/50 tracking-[0.15em] uppercase mb-6 text-center">
             Companies Worked With
           </h3>
           <div className="flex flex-wrap justify-center gap-4">
             {profile.companies.map((company) => (
               <span
                 key={company}
-                className="px-5 py-2.5 bg-white rounded-full text-dark-text/70 text-sm font-medium shadow-sm border border-gray-100"
+                className="px-5 py-2.5 bg-white rounded-full text-dark-text/70 text-sm font-medium shadow-sm border border-border"
               >
                 {company}
               </span>
@@ -53,7 +53,7 @@ export function About() {
 
         <div className="mt-16 grid md:grid-cols-2 gap-12">
           <AnimateOnScroll>
-            <h3 className="text-sm font-semibold text-dark-text/50 tracking-[0.2em] uppercase mb-4">
+            <h3 className="text-sm font-bold text-dark-text/50 tracking-[0.15em] uppercase mb-4">
               Project Cargo Experience
             </h3>
             <div className="flex flex-wrap gap-2">
@@ -69,7 +69,7 @@ export function About() {
           </AnimateOnScroll>
 
           <AnimateOnScroll delay={0.1}>
-            <h3 className="text-sm font-semibold text-dark-text/50 tracking-[0.2em] uppercase mb-4">
+            <h3 className="text-sm font-bold text-dark-text/50 tracking-[0.15em] uppercase mb-4">
               Operations Experience
             </h3>
             <div className="flex flex-wrap gap-2">

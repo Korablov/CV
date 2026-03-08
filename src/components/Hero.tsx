@@ -12,7 +12,7 @@ export function Hero() {
         initial={{ scale: 0.8, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
         transition={{ duration: 0.6 }}
-        className="relative w-40 h-40 md:w-52 md:h-52 rounded-full overflow-hidden border-4 border-gold/30 mb-8"
+        className="relative w-40 h-40 md:w-52 md:h-52 rounded-full overflow-hidden border-4 border-steel/30 mb-8"
       >
         <Image
           src={profile.profileImage}
@@ -27,7 +27,7 @@ export function Hero() {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.2, duration: 0.5 }}
-        className="text-4xl md:text-6xl font-bold text-light-text tracking-[0.2em] text-center"
+        className="text-4xl md:text-6xl font-black text-light-text tracking-[0.05em] text-center"
       >
         {profile.name.toUpperCase()}
       </motion.h1>
@@ -36,7 +36,7 @@ export function Hero() {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.4, duration: 0.5 }}
-        className="text-steel text-lg md:text-xl mt-4 tracking-wider"
+        className="text-steel text-lg md:text-xl mt-4 tracking-wider font-medium"
       >
         {profile.title}
       </motion.p>
@@ -59,13 +59,13 @@ export function Hero() {
         <a
           href={profile.cvPath}
           download
-          className="px-8 py-3 bg-gold text-navy font-semibold rounded tracking-wider text-sm hover:bg-gold-hover transition-colors"
+          className="px-8 py-3 bg-steel text-white font-bold rounded tracking-wider text-sm hover:bg-gold-hover transition-colors"
         >
           DOWNLOAD CV
         </a>
         <a
           href="#contact"
-          className="px-8 py-3 border border-light-text/30 text-light-text rounded tracking-wider text-sm hover:border-gold hover:text-gold transition-colors"
+          className="px-8 py-3 border border-light-text/30 text-light-text rounded tracking-wider text-sm hover:border-steel hover:text-steel transition-colors"
         >
           GET IN TOUCH
         </a>

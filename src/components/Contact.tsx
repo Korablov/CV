@@ -23,10 +23,10 @@ function ContactLink({
     >
       <span className="text-2xl w-10 text-center">{icon}</span>
       <div>
-        <div className="text-xs text-dark-text/40 uppercase tracking-wider">
+        <div className="text-xs text-dark-text/40 uppercase tracking-wider font-bold">
           {label}
         </div>
-        <div className="text-base group-hover:text-steel transition-colors">
+        <div className="text-base group-hover:text-steel transition-colors font-medium">
           {value}
         </div>
       </div>
@@ -44,7 +44,7 @@ export function Contact() {
     <section id="contact" className="bg-white py-20 md:py-28 px-6">
       <div className="max-w-xl mx-auto text-center">
         <AnimateOnScroll>
-          <h2 className="text-3xl font-bold text-dark-text tracking-wider mb-12">
+          <h2 className="text-2xl md:text-3xl font-black text-dark-text tracking-[0.05em] mb-12">
             GET IN TOUCH
           </h2>
         </AnimateOnScroll>
@@ -78,14 +78,14 @@ export function Contact() {
           <a
             href={profile.cvPath}
             download
-            className="inline-block px-10 py-4 bg-gold text-navy font-semibold rounded tracking-wider text-sm hover:bg-gold-hover transition-colors"
+            className="inline-block px-10 py-4 bg-steel text-white font-bold rounded tracking-wider text-sm hover:bg-gold-hover transition-colors"
           >
             DOWNLOAD FULL CV
           </a>
         </AnimateOnScroll>
       </div>
 
-      <div className="max-w-6xl mx-auto mt-20 pt-8 border-t border-gray-100 text-center">
+      <div className="max-w-6xl mx-auto mt-20 pt-8 border-t border-border text-center">
         <p className="text-dark-text/30 text-xs tracking-wider">
           © {new Date().getFullYear()} Volodymyr Korablov
         </p>

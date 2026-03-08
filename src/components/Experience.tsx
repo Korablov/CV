@@ -8,7 +8,7 @@ export function Experience() {
     <section id="experience" className="bg-navy py-20 md:py-28 px-6">
       <div className="max-w-4xl mx-auto">
         <AnimateOnScroll>
-          <h2 className="text-3xl font-bold text-light-text tracking-wider mb-12 text-center">
+          <h2 className="text-2xl md:text-3xl font-black text-light-text tracking-[0.05em] mb-12 text-center">
             EXPERIENCE
           </h2>
         </AnimateOnScroll>
@@ -23,7 +23,7 @@ export function Experience() {
                   i % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
                 }`}
               >
-                <div className="absolute left-4 md:left-1/2 w-3 h-3 bg-gold rounded-full -translate-x-1/2 mt-2 z-10" />
+                <div className="absolute left-4 md:left-1/2 w-3 h-3 bg-steel rounded-full -translate-x-1/2 mt-2 z-10" />
 
                 <div
                   className={`ml-10 md:ml-0 md:w-[calc(50%-2rem)] ${
@@ -31,13 +31,15 @@ export function Experience() {
                   }`}
                 >
                   <div className="bg-navy-light border border-steel/20 rounded-lg p-5">
-                    <div className="text-gold text-xs font-semibold tracking-wider mb-1">
+                    <div className="text-steel text-xs font-bold tracking-wider mb-1">
                       {exp.period}
                     </div>
-                    <div className="text-light-text font-bold text-lg">
+                    <div className="text-light-text font-black text-lg">
                       {exp.role}
                     </div>
-                    <div className="text-steel text-sm mt-1">{exp.vessel}</div>
+                    <div className="text-light-text/70 text-sm mt-1 font-medium">
+                      {exp.vessel}
+                    </div>
                     <div className="text-light-text/40 text-xs mt-2">
                       {exp.dwt} DWT · {exp.owner}
                     </div>
@@ -54,7 +56,7 @@ export function Experience() {
             <a
               href={profile.cvPath}
               download
-              className="text-steel hover:text-gold transition-colors underline"
+              className="text-steel hover:text-steel/70 transition-colors underline"
             >
               view full history in CV
             </a>

@@ -27,7 +27,7 @@ export function Navbar() {
       }`}
     >
       <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-        <a href="#" className="text-light-text font-bold tracking-widest text-sm">
+        <a href="#" className="text-light-text font-black tracking-wider text-sm">
           V. KORABLOV
         </a>
 
@@ -36,7 +36,7 @@ export function Navbar() {
             <a
               key={link.href}
               href={link.href}
-              className="text-light-text/70 hover:text-gold transition-colors text-sm tracking-wider uppercase"
+              className="text-light-text/70 hover:text-steel transition-colors text-sm tracking-wider uppercase font-medium"
             >
               {link.label}
             </a>
@@ -69,7 +69,7 @@ export function Navbar() {
               key={link.href}
               href={link.href}
               onClick={() => setMenuOpen(false)}
-              className="block py-2 text-light-text/70 hover:text-gold transition-colors text-sm tracking-wider uppercase"
+              className="block py-2 text-light-text/70 hover:text-steel transition-colors text-sm tracking-wider uppercase font-medium"
             >
               {link.label}
             </a>
