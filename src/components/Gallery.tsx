@@ -5,6 +5,7 @@ import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { profile } from "@/data/profile";
 import { AnimateOnScroll } from "./AnimateOnScroll";
+import { NauticalLines } from "./NauticalLines";
 
 export function Gallery() {
   const [selected, setSelected] = useState<number | null>(null);
@@ -13,7 +14,8 @@ export function Gallery() {
   if (photos.length === 0) return null;
 
   return (
-    <section id="gallery" className="bg-light-bg py-20 md:py-28 px-6">
+    <section id="gallery" className="relative bg-light-bg py-20 md:py-28 px-6">
+      <NauticalLines />
       <div className="max-w-6xl mx-auto">
         <AnimateOnScroll>
           <h2 className="text-3xl font-bold text-dark-text tracking-wider mb-12 text-center">

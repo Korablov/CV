@@ -2,10 +2,12 @@
 
 import { profile } from "@/data/profile";
 import { AnimateOnScroll } from "./AnimateOnScroll";
+import { NauticalLines } from "./NauticalLines";
 
 export function About() {
   return (
-    <section id="about" className="bg-light-bg py-20 md:py-28 px-6">
+    <section id="about" className="relative bg-light-bg py-20 md:py-28 px-6">
+      <NauticalLines />
       <div className="max-w-6xl mx-auto">
         <div className="grid md:grid-cols-2 gap-12 md:gap-16">
           <AnimateOnScroll>

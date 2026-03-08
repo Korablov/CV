@@ -2,6 +2,7 @@
 
 import { profile } from "@/data/profile";
 import { AnimateOnScroll } from "./AnimateOnScroll";
+import { NauticalLines } from "./NauticalLines";
 
 function ContactLink({
   href,
@@ -41,7 +42,8 @@ export function Contact() {
     : undefined;
 
   return (
-    <section id="contact" className="bg-white py-20 md:py-28 px-6">
+    <section id="contact" className="relative bg-white py-20 md:py-28 px-6">
+      <NauticalLines />
       <div className="max-w-xl mx-auto text-center">
         <AnimateOnScroll>
           <h2 className="text-2xl md:text-3xl font-black text-dark-text tracking-[0.05em] mb-12">
