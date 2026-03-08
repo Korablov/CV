@@ -43,12 +43,15 @@ export function About() {
           </h3>
           <div className="flex flex-wrap justify-center gap-4">
             {profile.companies.map((company) => (
-              <span
-                key={company}
-                className="px-5 py-2.5 bg-white rounded-full text-dark-text/70 text-sm font-medium shadow-sm border border-border"
+              <a
+                key={company.name}
+                href={company.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-5 py-2.5 bg-white rounded-full text-dark-text/70 text-sm font-medium shadow-sm border border-border hover:border-steel hover:text-steel transition-colors"
               >
-                {company}
-              </span>
+                {company.name}
+              </a>
             ))}
           </div>
         </AnimateOnScroll>

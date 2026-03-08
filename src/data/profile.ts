@@ -13,18 +13,19 @@ export const profile = {
 
   keyFacts: [
     { value: "13+", label: "Years at Sea", sub: "Since 2012" },
-    { value: "6", label: "Major Companies", sub: "Heavy-lift operators" },
+    { value: "7", label: "Major Companies", sub: "Heavy-lift operators" },
     { value: "Master", label: "Certificate", sub: "Unlimited" },
-    { value: "C1/D", label: "US Visa", sub: "Valid to 2027" },
+    { value: "Available", label: "Availability", sub: "Master on Heavy Lift / MPP vessels" },
   ],
 
   companies: [
-    "BBC Chartering",
-    "dship Carriers",
-    "Intermarine",
-    "SAL Heavy Lift",
-    "Harren & Partner",
-    "Combi Lift",
+    { name: "BBC Chartering", url: "https://www.bbc-chartering.com" },
+    { name: "dship Carriers", url: "https://dship-carriers.com" },
+    { name: "Intermarine", url: "https://www.intermarine.com" },
+    { name: "SAL Heavy Lift", url: "https://sal.global" },
+    { name: "Harren & Partner", url: "https://www.harren-group.com" },
+    { name: "Combi Lift", url: "https://www.combi-lift.net" },
+    { name: "Jumbo Shipping", url: "https://www.jumbomaritime.nl" },
   ],
 
   cargoExpertise: [
