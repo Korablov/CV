@@ -4,7 +4,7 @@ export const profile = {
   tagline: "13+ years commanding heavy-lift operations worldwide",
   email: "volodymyr.korablov@gmail.com",
   phone: "+380507662038",
-  telegram: "",
+  telegram: "CaptKorablov",
   cvPath: "/cv/CV_Volodymyr_Korablov.pdf",
   profileImage: "/images/main.JPG",
 
