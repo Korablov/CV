@@ -67,7 +67,7 @@ export function Hero() {
           href="#contact"
           className="px-8 py-3 border border-light-text/30 text-light-text rounded tracking-wider text-sm hover:border-steel hover:text-steel transition-colors"
         >
-          GET IN TOUCH
+          CONTACT
         </a>
       </motion.div>
 
