@@ -6,7 +6,7 @@ export const profile = {
   phone: "+380507662038",
   telegram: "CaptKorablov",
   cvPath: "/cv/CV_Volodymyr_Korablov.pdf",
-  profileImage: "/images/main.JPG",
+  profileImage: "/images/main-official-20260323.jpg",
 
   about:
     "Experienced Heavy-Lift Master with continuous service on heavy-lift vessels since 2012. Over 13 years of professional experience in heavy-lift and project cargo operations, including command as Master. Extensive background in handling complex, non-standard and oversized cargoes worldwide. Safety-oriented leader with calm decision-making under pressure.",
