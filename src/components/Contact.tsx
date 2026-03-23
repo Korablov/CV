@@ -66,6 +66,14 @@ function EmailIcon() {
   );
 }
 
+function LinkedInIcon() {
+  return (
+    <svg className="w-7 h-7" fill="currentColor" viewBox="0 0 24 24">
+      <path d="M19 3A2 2 0 0 1 21 5V19A2 2 0 0 1 19 21H5A2 2 0 0 1 3 19V5A2 2 0 0 1 5 3H19ZM8.34 18.34V9.32H5.66V18.34H8.34ZM7 8.1A1.56 1.56 0 1 0 7 4.98A1.56 1.56 0 0 0 7 8.1ZM18.34 18.34V13.4C18.34 10.76 16.93 9.53 15.05 9.53C13.53 9.53 12.85 10.37 12.47 10.96V9.32H9.8C9.84 10.41 9.8 18.34 9.8 18.34H12.47V13.3C12.47 13.03 12.49 12.76 12.57 12.57C12.79 12.03 13.28 11.47 14.12 11.47C15.21 11.47 15.66 12.3 15.66 13.52V18.34H18.34Z" />
+    </svg>
+  );
+}
+
 export function Contact() {
   const whatsappUrl = `https://wa.me/${profile.phone.replace(/[^0-9]/g, "")}`;
   const telegramUrl = `https://t.me/${profile.telegram}`;
@@ -81,7 +89,7 @@ export function Contact() {
         </AnimateOnScroll>
 
         <AnimateOnScroll delay={0.1}>
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
             <ContactCard
               href={whatsappUrl}
               label="WhatsApp"
@@ -102,6 +110,13 @@ export function Contact() {
               value={profile.email}
               icon={<EmailIcon />}
               color="#253746"
+            />
+            <ContactCard
+              href={profile.linkedin}
+              label="LinkedIn"
+              value="capt-korablov"
+              icon={<LinkedInIcon />}
+              color="#0A66C2"
             />
           </div>
         </AnimateOnScroll>

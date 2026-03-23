@@ -5,6 +5,7 @@ export const profile = {
   email: "volodymyr.korablov@gmail.com",
   phone: "+380507662038",
   telegram: "CaptKorablov",
+  linkedin: "https://www.linkedin.com/in/capt-korablov",
   cvPath: "/cv/CV_Volodymyr_Korablov.pdf",
   profileImage: "/images/main-official-20260323.jpg",
 
