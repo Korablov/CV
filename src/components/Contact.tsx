@@ -22,7 +22,7 @@ function ContactCard({
       href={href}
       target="_blank"
       rel="noopener noreferrer"
-      className="flex flex-col items-center gap-4 p-8 bg-white rounded-xl shadow-sm border border-border hover:shadow-md hover:-translate-y-1 transition-all group"
+      className="flex min-w-0 flex-col items-center gap-4 p-8 bg-white rounded-xl shadow-sm border border-border hover:shadow-md hover:-translate-y-1 transition-all group"
     >
       <div
         className="w-14 h-14 rounded-full flex items-center justify-center text-white"
@@ -30,11 +30,11 @@ function ContactCard({
       >
         {icon}
       </div>
-      <div className="text-center">
+      <div className="min-w-0 w-full text-center">
         <div className="text-xs text-dark-text/40 uppercase tracking-wider font-bold mb-1">
           {label}
         </div>
-        <div className="text-dark-text font-medium text-sm group-hover:text-steel transition-colors">
+        <div className="text-dark-text font-medium text-sm leading-snug break-words overflow-wrap-anywhere group-hover:text-steel transition-colors">
           {value}
         </div>
       </div>
@@ -81,7 +81,7 @@ export function Contact() {
   return (
     <section id="contact" className="relative bg-white py-20 md:py-28 px-6">
       <NauticalLines />
-      <div className="relative z-10 max-w-3xl mx-auto">
+      <div className="relative z-10 max-w-5xl mx-auto">
         <AnimateOnScroll>
           <h2 className="text-2xl md:text-3xl font-black text-dark-text tracking-[0.05em] mb-12 text-center">
             CONTACT
